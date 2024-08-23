@@ -1,0 +1,17 @@
+beacon_command_register(
+        "detect_hooks",
+        "List Hooked Functions in the Current Process.",
+        "Detecting Hooks in Currnet Process, Usage: detect_hooks"
+);
+
+alias("detect_hooks",
+{
+    local('$handle $arch $data $args ');
+    println(@_);
+    $arch  = barch($1);
+    $handle = openf(script_resource("bof $+ $arch $+ .o"));
+    $data = readb($handle, -1);
+    closef($handle);
+    btask($1, "Detecting Hooks By @Patrick0x41");
+    beacon_inline_execute($1,$data,"go",$args);
+})
