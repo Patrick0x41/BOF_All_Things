@@ -3,4 +3,4 @@
 
 | Name  | Description |
 | ------------- | ------------- |
-| detect-hooks  | Detect Hooks in current process  |
+| detect-hooks  | Detect inline hooks in current process  |
