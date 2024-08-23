@@ -1,5 +1,6 @@
 # BOF_All_Things
-
+This repository contains a collection of Beacon Object Files (BOFs) that integrate with Cobalt Strike.
+I write these BOFs as a way to practice and enhance my skills
 
 | Name  | Description |
 | ------------- | ------------- |
