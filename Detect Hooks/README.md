@@ -1,4 +1,4 @@
-# Detect Hooks in the Current Process
+# Detect Inline Hooks in the Current Process
 
 
 
